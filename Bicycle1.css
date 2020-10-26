@@ -1,0 +1,325 @@
+
+#header {
+    background-color:skyblue;
+    text-align: center;
+    width: 100%;
+    padding: 15px 2%;
+    border-bottom: 2px solid black;
+   
+        
+}
+#body{
+    background-color: whitesmoke;
+     margin: 0auto;
+    border: 2px solid black;
+    width: 90%;  
+    
+}
+
+#container {
+    background-color: beige;
+    width: 960px;
+    /* margin-left: auto;
+    margin-right: auto;
+    */
+    float:auto; 
+}
+
+#content {
+    padding: 10px;
+    width: 70%;
+    float:left;
+    overflow: auto;
+     background-color: beige;
+    /* display: flex;
+    justify-content: flex-end;
+    */
+}
+
+
+#nav {
+    width: 180px;
+    float: left;
+    background-color: beige; 
+}
+
+#main {
+    width 600px
+    float:left;
+    
+}
+
+#footer {
+    clear: both;
+    width: 96.875%;
+    padding: 15px 1.5%;
+    border-top: 2px solid skyblue;
+    background-color: skyblue;
+}
+
+img
+/* resizing was a bit difficult, more of a visual learner*/ 
+{ 
+    padding: 20px;
+    width: 450px;
+    border: 5px double skyblue;
+    color: skyblue;
+    border-radius: 10px 10px  100px;
+    position: relative
+}
+#nav_list ul {
+    list-style-type: none;
+    margin-left: 1.25px;
+    margin-bottom: 1.5px;
+}
+#nav_list ul li {
+    width: 200px;
+    margin-bottom: .5px;
+   
+}
+#nav_list ul li a {
+    display: block;
+    padding: .5px 0 .5px 1.5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: darkred;
+    
+}
+#nav_list ul li a.current {
+    background-color: azure;
+}
+
+#container{
+    width:80%;
+    margin: 0 auto;
+    overflow: auto;
+    clear: both
+}
+
+#footer {
+    width: 80%;
+    margin: 0 auto;
+    overflow: auto;
+    clear:both;
+}
+
+img{
+    max-width:  100%;
+   display: block;
+    margin: 0 auto;
+    
+    
+}
+
+
+
+.inline{
+    float: right;
+    margin: 0 0 1px 2px;
+    width: 45%;
+    min-width: 200px;
+}
+/* media was fairly easy, scaling may still be an issue with pictures. working on fixes.*/
+
+@media screen and(max-width: 959px){
+    #container{
+        width 100%; 
+    }
+    #content {
+        width:30%;
+    }
+    #main {
+        width: 70%
+    }
+    
+    img {
+        width:100%;
+    }
+}
+
+@media screen and(max-width: 640px){
+    #container{
+        width 100%; 
+    }
+    #content {
+        width:100%;
+    }
+    #main {
+        width: 100%
+    }
+    
+   
+}
+
+@media screen and(max-width: 320px){
+    #container{
+        width 320px; 
+    }
+    #content {
+        width:30%;
+    }
+    #main {
+        width: 320px
+    }
+    
+}
+
+/* not sure if correctly formated. still updating as we go along.*/
+.slicknav_menu{
+    display: none;
+}
+@media all and(max-width:769px){
+    .slicknav_menu{
+        display: block;
+        width:40%;
+        float:right;
+        background: transparent;
+    }
+    .slicknav_menu li{
+        background: #333;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .slicknav_nav a:hover{
+        background: transparent;
+        color: #fff;
+    }
+    .nav{
+        display: none;
+    }
+}
+
+
+/* Parent & Child Flexbox */ 
+
+
+
+
+
+
+.parent{
+    height: 40vh;
+   
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+.child1{
+    width: 200px;
+    height: 200px;
+    background: blue  (39, 61. 134);
+}
+
+
+.child2 {
+    width: 200px;
+    height: 200px; 
+    background: rgb (172, 57, 53);
+}
+
+
+/* Image Rollover*/ 
+
+#image1 {
+    background-image: url(Lugo_Basic_Web_Page_Pictures/Electric.jpeg.png);
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+    position: relative;
+    
+}
+
+#image1:hover {
+    background-image: url(Lugo_Basic_Web_Page_Pictures/Electirc2.jpg);
+}
+
+
+/* CCS for service table */ 
+
+}
+.table-box
+{
+    margin: 50px auto;
+}
+.table-row
+{
+    display: table;
+    width: 80%;
+    margin: 10px auto;
+    font-family: sans-serif;
+    background: transparent;
+    padding: 12px 0;
+    color: #555;
+    font-size: 13px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,50,0.3);
+}
+
+
+.table-cell
+{
+    display: table-cell;
+    width: 305;
+    text-align: center;
+    padding: px 0;
+    border-right: 0px solid #d6d4d4;
+    vertical-align: center;
+}
+
+.table-head
+{
+    background: #87cefa;
+    box-shadow: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.table-head .table-cell
+{
+    border-right: none;
+}
+
+.last-cell
+{
+    border-right: none;
+}
+
+.first-cell
+{
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+/* Form box */
+
+ label {
+    width: 150px;
+    display: inline-block;
+}
+
+input {
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+input [type="checkbox"], input[type="radio"]{
+    height: 16px;
+    width: 16px;
+}
+
+textarea {
+    padding: 16px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
